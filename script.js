@@ -1,3 +1,5 @@
+//Author: Lucas Strycker
+//CINS110 Final Project
 function Register(){
   var user = document.getElementById("username").value;
   if(user.length > 20 || user.length <= 6 || user == user.toLowerCase){
