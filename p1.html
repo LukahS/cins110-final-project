@@ -3,26 +3,32 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css"/>
-	<title></title>
+	<title>Signup Page</title>
 	<meta charset = "UTF-8">
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<h1>Please register an account.</h1>
 	<div class="centerinput">
 		<input type="text" id="username">
-		<br>
+    <br>
 		<br>
 		<input type="text" id="password">
+    <br>
+		<br>
+		<input type="radio" name="userType" id="clearance">Admin
 		<br>
 		<br>
-		<input type="radio" id="clearance">Admin</input>
+		<input type="radio" name="userType" id="clearance2">User
 		<br>
 		<br>
-		<input type="radio" id="clearance2" checked>User</input>
-		<br>
-		<br>
-		<input type="submit" value="Sign up">
+		<button type="button" value="Sign up" onclick="Register();">Sign Up</button>
 	</div>
+  <p id="isUserRight"></p>
+  <p id="isPassRight"></p>
+  <p id="isRegistered"></p>
+
+  <p>Click <a href="p2.html">here</a> to log in.</p>
+
 </body>
 </html>
-
